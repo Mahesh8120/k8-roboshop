@@ -8,3 +8,4 @@ spec:
   - name: debug-pod
     image: mahesh8120/debug:v1
     command: ["sleep", "100000"]
+
