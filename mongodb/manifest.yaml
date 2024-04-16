@@ -22,11 +22,11 @@ spec:
         tier: db
     spec:
       containers:
-        name: mongodb
+      - name: mongodb
         image: mahesh8120/mongodb:v1
         imagePullPolicy: Always
 ---
-apiVersion: app/v1
+apiVersion: v1
 kind: Service
 metadata:
   name: mongodb
