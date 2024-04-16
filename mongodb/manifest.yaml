@@ -32,7 +32,7 @@ metadata:
   name: mongodb
   namespace: roboshop
 spec:
-  selectors:
+  selector:
     app: mongodb
     project: roboshop
     tier: db
@@ -41,5 +41,4 @@ spec:
     port: 27017
     targetport: 27017
     
-   
-
+  
