@@ -9,7 +9,7 @@ metadata:
     tier: db
 spec:
   replicas: 1
-  selectors:
+  selector:
     matchLabels: 
       app: mongodb
       project: roboshop
@@ -24,14 +24,14 @@ spec:
       containers:
         name: mongodb
         image: mahesh8120/mongodb:v1
-        imagePullPOlicy: Always
+        imagePullPolicy: Always
 ---
 apiVersion: app/v1
 kind: Service
-metadata: 
+metadata:
   name: mongodb
   namespace: roboshop
-spec: 
+spec:
   selectors:
     app: mongodb
     project: roboshop
