@@ -9,7 +9,7 @@ metadata:
     tier: db
 spec:
   replicas: 1
-  selector:
+  selector: 
     matchLabels: # these labels are used to find the pods
       app: mongodb
       project: roboshop
@@ -40,4 +40,3 @@ spec:
   - protocol: TCP
     port: 27017 #service-port
     targetPort: 27017 #container-port
-  
