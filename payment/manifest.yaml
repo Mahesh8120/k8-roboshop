@@ -35,7 +35,7 @@ spec:
         image: mahesh8120/payment:v1
         imagePullPolicy: Always
         envFrom:
-        - configMapRef:
+        - secretRef:
             name: payment
 ---
 apiVersion: v1
